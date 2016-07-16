@@ -1,0 +1,235 @@
+<html>
+    <head>
+        <title>E8内部分享</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link rel="stylesheet" href="css/weui.min.css">
+        <link rel="stylesheet" href="css/jquery-weui.min.css">
+        <link rel="stylesheet" href="css/comm.css">
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+    <body>
+        <!--header-->
+        <header class="topBar">
+            <a href="#">
+                <i class="iconfont icon-fenlei" onclick="classify_open()"></i>
+                <h2 onclick="classify_open()">分类</h2>
+            </a>
+            <i class="iconfont icon-sousu" id="search_open_btn"></i>
+        </header>
+        <!--Slide-->
+        <div class="swiper-container" data-space-between='10' data-pagination='.swiper-pagination' data-autoplay="1000">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="pic/slide1.gif" alt=""></div>
+                <div class="swiper-slide"><img src="pic/slide2.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="pic/slide3.jpg" alt=""></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <!--热门视频-->
+        <div class="weui_panel weui_panel_access">
+            <div class="weui_panel_hd">热门视频</div>
+            <div class="weui_panel_bd">
+                <a href="javascript:void(0);" class="weui_media_box weui_media_appmsg">
+                    <div class="weui_media_hd">
+                        <img class="weui_media_appmsg_thumb" src="pic/bootstrap1.gif" alt="">
+                    </div>
+                    <div class="weui_media_bd">
+                        <h4 class="weui_media_title">Bootstrap</h4>
+                        <p class="weui_media_desc">基于BootStrap的网页开发，主要介绍Boot
+                            Strap的基本部件的使用。</p>
+                    </div>
+                </a>
+                <a href="javascript:void(0);" class="weui_media_box weui_media_appmsg">
+                    <div class="weui_media_hd">
+                        <img class="weui_media_appmsg_thumb" src="pic/bootstrap1.gif" alt="">
+                    </div>
+                    <div class="weui_media_bd">
+                        <h4 class="weui_media_title">Bootstrap</h4>
+                        <p class="weui_media_desc">基于BootStrap的网页开发，主要介绍Boot
+                            Strap的基本部件的使用。</p>
+                    </div>
+                </a>
+                <a href="javascript:void(0);" class="weui_media_box weui_media_appmsg">
+                    <div class="weui_media_hd">
+                        <img class="weui_media_appmsg_thumb" src="pic/bootstrap1.gif" alt="">
+                    </div>
+                    <div class="weui_media_bd">
+                        <h4 class="weui_media_title">Bootstrap</h4>
+                        <p class="weui_media_desc">基于BootStrap的网页开发，主要介绍Boot
+                            Strap的基本部件的使用。</p>
+                    </div>
+                </a>
+            </div>
+            <a class="weui_panel_ft" href="javascript:void(0);">查看更多</a>
+        </div>
+        <!--最新上传-->
+        <div class="weui_panel weui_panel_access">
+            <div class="weui_panel_hd">最新上传</div>
+            <div class="weui_panel_bd">
+                <a href="javascript:void(0);" class="weui_media_box weui_media_appmsg">
+                    <div class="weui_media_hd">
+                        <img class="weui_media_appmsg_thumb" src="pic/bootstrap1.gif" alt="">
+                    </div>
+                    <div class="weui_media_bd">
+                        <h4 class="weui_media_title">Bootstrap</h4>
+                        <p class="weui_media_desc">基于BootStrap的网页开发，主要介绍Boot
+                            Strap的基本部件的使用。</p>
+                    </div>
+                </a>
+                <a href="javascript:void(0);" class="weui_media_box weui_media_appmsg">
+                    <div class="weui_media_hd">
+                        <img class="weui_media_appmsg_thumb" src="pic/bootstrap1.gif" alt="">
+                    </div>
+                    <div class="weui_media_bd">
+                        <h4 class="weui_media_title">Bootstrap</h4>
+                        <p class="weui_media_desc">基于BootStrap的网页开发，主要介绍Boot
+                            Strap的基本部件的使用。</p>
+                    </div>
+                </a>
+                <a href="javascript:void(0);" class="weui_media_box weui_media_appmsg">
+                    <div class="weui_media_hd">
+                        <img class="weui_media_appmsg_thumb" src="pic/bootstrap1.gif" alt="">
+                    </div>
+                    <div class="weui_media_bd">
+                        <h4 class="weui_media_title">Bootstrap</h4>
+                        <p class="weui_media_desc">基于BootStrap的网页开发，主要介绍Boot
+                            Strap的基本部件的使用。</p>
+                    </div>
+                </a>
+            </div>
+            <a class="weui_panel_ft" href="javascript:void(0);">查看更多</a>
+        </div>
+        <P class="watermark">E8net-3T小组</P>
+        <!--搜索页面-->
+        <section class="search" id="search">
+            <header class="topBar">
+                <a href="#">
+                    <i class="iconfont icon-jiantou1" id="search_close_btn"></i>
+                </a>
+                <input type="search" placeholder="搜索资料"/>
+                <i class="iconfont icon-sousu"></i>
+            </header>
+            <section class="search_body">
+                <p class="search_clear">清空</p>
+                <ul>
+                    <li>搜索历史</li>
+                    <li><a href="#">AngularJS</a></li>
+                </ul>
+                <ul>
+                    <li>热门搜索</li>
+                    <li><a href="#">3T</a></li>
+                    <li><a href="#">AngularJS</a></li>
+                    <li><a href="#">Java</a></li>
+                    <li><a href="#">PHP</a></li>
+                </ul>
+            </section>
+        </section>
+        <!--分类页面-->
+        <section class="classify" id="classify">
+            <header class="topBar">
+                <a href="#">
+                    <i class="iconfont icon-jiantou1" id="classify_close"></i>
+                </a>
+                <h2>分类</h2>
+            </header>
+            <!--分类-->
+            <div style="overflow-y: scroll;" id="classify_div">
+            <section class="classify-body">
+                <a href="#">全部课程</a>
+                <h3>前端开发</h3>
+                <ul>
+                    <li><a href="#" style="background-color: #61C2F8">HTML/CSS</a></li>
+                    <li><a href="#" style="background-color: #993366">JS</a></li>
+                    <li><a href="#" style="background-color: #0A91DA">jQuery</a></li>
+                    <li><a href="#" style="background-color: #DF9E73">H5</a></li>
+                    <li><a href="#" style="background-color: #ABDD78">Node.js</a></li>
+                    <li><a href="#" style="background-color: #F01400">Angular.js</a></li>
+                    <li><a href="#" style="background-color: #0978B5">CSS3</a></li>
+                    <li><a href="#" style="background-color: #B690F7">Bootstrap</a></li>
+                </ul>
+                <h3>后端开发</h3>
+                <ul>
+                    <li><a href="#" style="background-color: #0978B5">PHP</a></li>
+                    <li><a href="#" style="background-color: #FF9900">Java</a></li>
+                    <li><a href="#" style="background-color: #ABDD78">Linux</a></li>
+                    <li><a href="#" style="background-color: #F01400">C#</a></li>
+                    <li><a href="#" style="background-color: #51FF51">数据结构</a></li>
+                    <li><a href="#" style="background-color: #FF0000">C</a></li>
+                </ul>
+                <h3>移动开发</h3>
+                <ul>
+                    <li><a href="#" style="background-color: #0978B5">Android</a></li>
+                    <li><a href="#" style="background-color: #CCCCCC">iOS</a></li>
+                    <li><a href="#" style="background-color: #61C2F8">Unity 3D</a></li>
+                    <li><a href="#" style="background-color: #F01400">Cocos2d</a></li>
+                </ul>
+                <h3>数据处理</h3>
+                <ul>
+                    <li><a href="#" style="background-color: #333399">MySQL</a></li>
+                    <li><a href="#" style="background-color: #B690F7">大数据</a></li>
+                </ul>
+                <h3>图像处理</h3>
+                <ul>
+                    <li><a href="#" style="background-color: #0A91DA">PS</a></li>
+                    <li><a href="#" style="background-color: #A56F00">FW</a></li>
+                    <li><a href="#" style="background-color: #FF0000">Fl</a></li>
+                    <li><a href="#" style="background-color: #53FA00">DW</a></li>
+                </ul>
+            </section>
+            </div>
+        </section>
+        <script type="text/javascript" src="js/jquery-2.1.4.js"charset="utf-8"></script>
+        <script type="text/javascript" src="js/jquery-weui.min.js"charset="utf-8"></script>
+        <script type="text/javascript" src="js/swiper.min.js"charset="utf-8"></script>
+        <script>
+            (function ($){
+                $(function(){
+                    //轮播图初始化
+                    $(".swiper-container").swiper({
+                        loop : true,
+                        autoplay : 3000,
+                        pagination:$('.swiper-pagination'),
+                    })
+                    //搜索页面切换
+                    var searchSection = $("#search");
+                    $("#search_open_btn").click(function(){
+                        searchSection.show(0,function(){
+                            searchSection.css({
+                                "transform":"translate(0,0)"
+                            })
+                        });
+                    })
+                    $("#search_close_btn").click(function(){
+                        searchSection.css({
+                            "transform":"translate(100%,0)"
+                        });
+                        setTimeout(function(){
+                            searchSection.hide(0)
+                        },600)
+                    })
+                    //分类页面
+                    var classifySection = $("#classify");
+                    window.classify_open = function(){
+                        classifySection.show(0,function(){
+                            classifySection.css({
+                                "transform":"translate(0,0)"
+                            })
+                        });
+                        document.body.style.overflow="hidden";
+                    }
+                    $("#classify_close").click(function(){
+                        classifySection.css({
+                            "transform":"translate(-100%,0)"
+                        });
+                        setTimeout(function(){
+                            classifySection.hide(0)
+                        },600)
+                        document.body.style.overflow="auto";
+                    })
+                    $("#classify_div").css('height',document.body.clientHeight-50);
+                });
+            })(jQuery)
+        </script>
+    </body>
+</html>
